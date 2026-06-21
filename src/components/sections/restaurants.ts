@@ -1,10 +1,10 @@
 import type { Restaurant } from "../../data/types";
-import { guidebook, iconBadge, domain } from "./helpers";
+import { domain, guidebook, iconBadge, ui } from "./helpers";
 
 export function renderRestaurants(): string {
   const meta = guidebook.sections?.restaurants;
-  const label = meta?.label ?? "Places to Eat";
-  const title = meta?.title ?? "Restaurants, Cafes, Bars & Eateries";
+  const label = meta?.label ?? ui.sections.restaurants.label;
+  const title = meta?.title ?? ui.sections.restaurants.title;
   const intro = meta?.intro ?? "";
   const MAX_HEARTS = 3;
 
@@ -12,11 +12,12 @@ export function renderRestaurants(): string {
     .map((r: Restaurant) => {
       const hearts = Array.from(
         { length: MAX_HEARTS },
-        (_, i) => `<span class="${i < r.hearts ? "heart" : "heart-empty"}" aria-hidden="true">♥</span>`,
+        (_, i) =>
+          `<span class="${i < r.hearts ? "heart" : "heart-empty"}" aria-hidden="true">♥</span>`,
       ).join("");
 
       return `
-     <div class="restaurant-card">
+      <div class="restaurant-card">
       <a href="${r.url}" target="_blank" rel="noopener" style="text-decoration: none;">
         <div class="link-card-body">
           <p class="link-card-name">${r.name}</p>
