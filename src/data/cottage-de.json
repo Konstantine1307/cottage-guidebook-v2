@@ -49,8 +49,9 @@
     }
   },
   "hero": {
-    "heading": "Willkommen in The Cottage in Tresowes Green Cottage",
-    "body": "Dies ist seit Juli 2012 unser Zuhause, und wir freuen uns sehr, es mit Ihnen zu teilen. Wir hoffen, dass dieses Gästebuch Ihnen hilft, Ihren Aufenthalt bei uns so angenehm wie möglich zu gestalten. Bitte lassen Sie uns wissen, wenn Sie weitere Informationen benötigen oder Vorschläge haben, was wir für zukünftige Gäste ergänzen könnten."
+    "heading": "Willkommen in The Cottage",
+    "subheading": "bei Tresowes Green Cottage",
+    "body": "The Cottage ist eine gut ausgestattete Zwei-Zimmer-Unterkunft, die auf dem Gelände von Tresowes Green Cottage liegt. Wir freuen uns, sie mit Ihnen zu teilen. Wir hoffen, dass dieses Gästebuch Ihren Aufenthalt bei uns angenehm macht. Bitte lassen Sie uns wissen, wenn Sie weitere Informationen benötigen."
   },
   "arrival": {
     "checkIn": {
